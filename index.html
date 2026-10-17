@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>李家閤 & 謝孟凡 浪漫婚禮邀請函</title>
+    <title>李家閤 Lee Chia-He & 謝孟凡 Hsieh Meng-Fan 浪漫婚禮邀請函</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Cormorant Garamond & Noto Serif TC -->
@@ -80,7 +80,7 @@
     <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
         <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#hero" class="font-garamond text-xl md:text-2xl font-semibold tracking-wider text-morandi-dark no-wrap">
-                Chia-He   &   Meng-Fan
+                Chia-He & Meng-Fan
             </a>
             <nav class="hidden md:flex space-x-10 text-sm tracking-widest uppercase font-medium">
                 <a href="#about" class="hover:text-morandi-rose transition-colors py-2">關於我們 ABOUT</a>
@@ -108,7 +108,7 @@
         <div class="relative z-10 max-w-4xl mx-auto px-6 text-white mt-12">
             <p class="text-sm md:text-base tracking-[0.3em] uppercase mb-4 text-morandi-sand font-light">WEDDING INVITATION</p>
             <h1 class="font-garamond text-5xl md:text-7xl lg:text-8xl font-normal tracking-wide mb-6">
-                Lee Chia-He <span class="text-morandi-pink font-light"> & </span> Hsieh Meng-Fan
+                Lee Chia-He <span class="text-morandi-pink font-light">&</span> Hsieh Meng-Fan
             </h1>
             <div class="w-24 h-[1px] bg-morandi-pink mx-auto my-6"></div>
             <p class="text-xl md:text-2xl font-light tracking-wider mb-2 no-wrap">新郎 李家閤 &nbsp;|&nbsp; 新娘 謝孟凡</p>
@@ -121,9 +121,9 @@
         </div>
     </section>
 
-    <!-- About Us Section with Three Soulful Quotes -->
+    <!-- PART 1: About Us Section -->
     <section id="about" class="py-24 md:py-32 px-6 max-w-4xl mx-auto text-center">
-        <span class="text-xs md:text-sm uppercase tracking-[0.25em] text-morandi-rose font-semibold">OUR STORY & SOULFUL QUOTES</span>
+        <span class="text-xs md:text-sm uppercase tracking-[0.25em] text-morandi-rose font-semibold">PART I &bull; 關於我們 &bull; OUR STORY</span>
         <h2 class="font-garamond text-3xl md:text-5xl mt-2 mb-8 text-morandi-dark">關於我們</h2>
         <div class="w-12 h-[2px] bg-morandi-pink mx-auto mb-12"></div>
         
@@ -144,11 +144,11 @@
         </p>
     </section>
 
-    <!-- Wedding Details & Artistic Countdown Section -->
+    <!-- PART 2: Wedding Details Section -->
     <section id="details" class="py-20 bg-morandi-blush/60 border-y border-morandi-pink/20">
         <div class="max-w-5xl mx-auto px-6">
             <div class="text-center mb-16">
-                <span class="text-xs md:text-sm uppercase tracking-[0.25em] text-morandi-rose font-semibold">CEREMONY & CELEBRATION</span>
+                <span class="text-xs md:text-sm uppercase tracking-[0.25em] text-morandi-rose font-semibold">PART II &bull; 婚禮詳情 &bull; DETAILS</span>
                 <h2 class="font-garamond text-3xl md:text-5xl mt-2 mb-4 text-morandi-dark">摯愛凝光・幸福序曲</h2>
                 <div class="w-12 h-[2px] bg-morandi-pink mx-auto"></div>
             </div>
@@ -233,11 +233,15 @@
                             <!-- Accordion Item 1 -->
                             <div class="border border-morandi-pink/30 rounded-xl overflow-hidden bg-white">
                                 <button onclick="toggleAccordion('acc-1')" class="w-full px-5 py-4 text-left flex justify-between items-center font-medium text-sm md:text-base text-morandi-dark hover:bg-morandi-blush/50 transition-colors">
-                                    <span class="no-wrap">高鐵 / 火車 High Speed Rail</span>
+                                    <span class="no-wrap">高鐵 / 大眾運輸 High Speed Rail</span>
                                     <svg id="icon-acc-1" class="w-4 h-4 transform transition-transform duration-300 text-morandi-rose" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                                 </button>
-                                <div id="content-acc-1" class="hidden px-5 pb-4 text-xs md:text-sm text-morandi-dark/70 leading-relaxed border-t border-morandi-pink/20 pt-3">
-                                    搭乘高鐵至 <span class="no-wrap font-semibold text-morandi-dark">高鐵新竹站</span>，轉乘計程車或接駁車約10分鐘即可抵達 <span class="no-wrap font-semibold text-morandi-dark">尊煌中式餐館</span>。
+                                <div id="content-acc-1" class="hidden px-5 pb-4 text-xs md:text-sm text-morandi-dark/70 leading-relaxed border-t border-morandi-pink/20 pt-3 space-y-2">
+                                    <p>搭乘高鐵至 <span class="no-wrap font-semibold text-morandi-dark">高鐵新竹站</span>，推薦以下兩種前往方式：</p>
+                                    <ul class="list-disc pl-5 space-y-1">
+                                        <li><span class="font-semibold text-morandi-dark">計程車直達：</span>車程約 10 分鐘即可直達 <span class="no-wrap font-semibold text-morandi-dark">尊煌中式餐館</span>。</li>
+                                        <li><span class="font-semibold text-morandi-dark">公車轉乘：</span>搭乘 <span class="font-semibold">5900公車</span> 至 <span class="no-wrap font-semibold text-morandi-dark">東元醫院 (稅捐局) 站</span> 下車，步行一小段路即可抵達。</li>
+                                    </ul>
                                 </div>
                             </div>
 
@@ -261,21 +265,20 @@
         </div>
     </section>
 
-    <!-- RSVP Section -->
+    <!-- PART 3: RSVP Section -->
     <section id="rsvp" class="py-24 px-6 max-w-3xl mx-auto">
         <div class="text-center mb-16">
-            <span class="text-xs md:text-sm uppercase tracking-[0.25em] text-morandi-rose font-semibold">RSVP FORM</span>
+            <span class="text-xs md:text-sm uppercase tracking-[0.25em] text-morandi-rose font-semibold">PART III &bull; 出席回函 &bull; RSVP FORM</span>
             <h2 class="font-garamond text-3xl md:text-5xl mt-2 mb-4 text-morandi-dark">賓客出席回函</h2>
             <div class="w-12 h-[2px] bg-morandi-pink mx-auto mb-4"></div>
             <p class="text-sm text-morandi-dark/70">請於 <span class="font-semibold text-morandi-dark no-wrap">2026年11月30日</span> 前填寫此表單以利統計人數，謝謝您！</p>
         </div>
 
         <!-- Hidden Iframe for silent Google Form submission -->
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){showSuccessModal();}"></iframe>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.submitted){showSuccessModal();}"></iframe>
 
-        <!-- Google Form Action with extracted form ID and blank inputs -->
-        <form id="rsvp-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeLWRY2tcLxCqao80-xMTDmZz10cOHB72-BOUOqvQMiK0Uxyw/formResponse?usp=pp_url&entry.1400921500=AAAA&entry.656229362=test@mail.com&entry.1420355116=%E7%94%B7%E6%96%B9%E5%A5%BD%E5%8F%8B&entry.990235373=10%E4%BA%BA&entry.1613964820=1%E4%BA%BA&entry.282322204=2%E4%BA%BA&entry.381934492=%E7%B4%A0%E9%A3%9F&entry.1669737100=3&entry.1530377129=BBBB
-" method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="soft-card p-8 md:p-12 space-y-6">
+        <!-- Google Form Action with correct entry IDs -->
+        <form id="rsvp-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeLWRY2tcLxCqao80-xMTDmZz10cOHB72-BOUOqvQMiK0Uxyw/formResponse" method="POST" target="hidden_iframe" onsubmit="window.submitted=true;" class="soft-card p-8 md:p-12 space-y-6">
             
             <!-- Field 1: Name -->
             <div>
@@ -300,10 +303,10 @@
                 </label>
                 <select id="entry.1420355116" name="entry.1420355116" required class="w-full px-4 py-3 rounded-lg border border-morandi-pink/40 bg-morandi-light focus:outline-none focus:ring-2 focus:ring-morandi-rose text-sm">
                     <option value="" disabled selected>請選擇關係</option>
-                    <option value="男方親友">男方親友</option>
-                    <option value="女方親友">女方親友</option>
-                    <option value="雙方共同好友">雙方共同好友</option>
-                    <option value="長輩親屬">長輩親屬</option>
+                    <option value="男方親屬">男方親屬</option>
+                    <option value="男方好友">男方好友</option>
+                    <option value="女方親屬">女方親屬</option>
+                    <option value="女方好友">女方好友</option>
                 </select>
             </div>
 
@@ -319,23 +322,45 @@
                     <option value="2人">2人</option>
                     <option value="3人">3人</option>
                     <option value="4人">4人</option>
-                    <option value="5人">5人以上</option>
+                    <option value="5人">5人</option>
+                    <option value="6人">6人</option>
+                    <option value="7人">7人</option>
+                    <option value="8人">8人</option>
+                    <option value="9人">9人</option>
+                    <option value="9人以上">9人以上</option>
                 </select>
             </div>
 
-            <!-- Conditional Section: Dietary Needs & High Chairs (Shown only if banquet attendance > 0) -->
+            <!-- Conditional Section: Dietary Needs, Child Chairs & Blessings (Shown only if banquet attendance > 0) -->
             <div id="conditional-fields" class="space-y-6 pt-4 border-t border-morandi-pink/20 hidden transition-all duration-300">
-                <!-- Field 5: Dietary Needs -->
-                <div>
-                    <label for="entry.381934492" class="block text-xs md:text-sm font-semibold tracking-wider text-morandi-dark mb-2">
-                        飲食需求 <span class="font-garamond text-morandi-rose font-normal text-base ml-1">DIETARY REQUIREMENTS</span>
-                    </label>
-                    <select id="entry.381934492" name="entry.381934492" class="w-full px-4 py-3 rounded-lg border border-morandi-pink/40 bg-morandi-light focus:outline-none focus:ring-2 focus:ring-morandi-rose text-sm">
-                        <option value="葷食" selected>葷食 (標準)</option>
-                        <option value="素食">素食</option>
-                        <option value="蛋奶素">蛋奶素</option>
-                        <option value="其他">其他</option>
-                    </select>
+                <!-- Field 5: Dietary Needs (Meat & Vegetarian counts 0-5) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="entry.381934492" class="block text-xs md:text-sm font-semibold tracking-wider text-morandi-dark mb-2">
+                            葷食人數 <span class="font-garamond text-morandi-rose font-normal text-base ml-1">MEAT COUNT</span>
+                        </label>
+                        <select id="entry.381934492" name="entry.381934492" class="w-full px-4 py-3 rounded-lg border border-morandi-pink/40 bg-morandi-light focus:outline-none focus:ring-2 focus:ring-morandi-rose text-sm">
+                            <option value="0人" selected>0人</option>
+                            <option value="1人">1人</option>
+                            <option value="2人">2人</option>
+                            <option value="3人">3人</option>
+                            <option value="4人">4人</option>
+                            <option value="5人">5人</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="entry.veg_count" class="block text-xs md:text-sm font-semibold tracking-wider text-morandi-dark mb-2">
+                            素食人數 <span class="font-garamond text-morandi-rose font-normal text-base ml-1">VEGETARIAN COUNT</span>
+                        </label>
+                        <select id="entry.veg_count" name="entry.veg_count" class="w-full px-4 py-3 rounded-lg border border-morandi-pink/40 bg-morandi-light focus:outline-none focus:ring-2 focus:ring-morandi-rose text-sm">
+                            <option value="0人" selected>0人</option>
+                            <option value="1人">1人</option>
+                            <option value="2人">2人</option>
+                            <option value="3人">3人</option>
+                            <option value="4人">4人</option>
+                            <option value="5人">5人</option>
+                        </select>
+                    </div>
                 </div>
 
                 <!-- Field 6: Child Chair Requirement -->
@@ -344,18 +369,26 @@
                         是否需要兒童椅 <span class="font-garamond text-morandi-rose font-normal text-base ml-1">CHILD CHAIR NEEDED</span>
                     </label>
                     <select id="entry.1669737100" name="entry.1669737100" class="w-full px-4 py-3 rounded-lg border border-morandi-pink/40 bg-morandi-light focus:outline-none focus:ring-2 focus:ring-morandi-rose text-sm">
-                        <option value="0" selected>不需要</option>
-                        <option value="1">1 張</option>
-                        <option value="2">2 張</option>
-                        <option value="3">3 張以上</option>
+                        <option value="不需要" selected>不需要</option>
+                        <option value="1張">1張</option>
+                        <option value="2張">2張</option>
+                        <option value="3張">3張</option>
+                        <option value="3張以上">3張以上</option>
                     </select>
+                </div>
+
+                <!-- Field 7: Blessing for Couple -->
+                <div>
+                    <label for="entry.1530377129" class="block text-xs md:text-sm font-semibold tracking-wider text-morandi-dark mb-2">
+                        給新人的祝福 <span class="font-garamond text-morandi-rose font-normal text-base ml-1">BLESSING</span>
+                    </label>
+                    <textarea id="entry.1530377129" name="entry.1530377129" rows="3" placeholder="請在此留下您給新人的溫馨祝福..." class="w-full px-4 py-3 rounded-lg border border-morandi-pink/40 bg-morandi-light focus:outline-none focus:ring-2 focus:ring-morandi-rose text-sm"></textarea>
                 </div>
             </div>
 
             <!-- Hidden / Extra Pre-filled Fields from Original URL to keep structural integrity -->
             <input type="hidden" name="entry.1613964820" value="1人">
             <input type="hidden" name="entry.282322204" value="2人">
-            <input type="hidden" name="entry.1530377129" value="BBBB">
 
             <!-- Submit Button -->
             <div class="pt-4 text-center">
@@ -392,7 +425,8 @@
 
     <!-- Client-side JavaScript -->
     <script>
-        let submitted = false;
+        // Global variable for submission state check
+        window.submitted = false;
 
         // Mobile Menu Toggle
         const menuBtn = document.getElementById('menu-btn');
@@ -465,7 +499,7 @@
             document.getElementById('success-modal').classList.remove('hidden');
             document.getElementById('rsvp-form').reset();
             document.getElementById('conditional-fields').classList.add('hidden');
-            submitted = false;
+            window.submitted = false;
         }
 
         function closeSuccessModal() {
