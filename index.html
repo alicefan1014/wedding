@@ -278,7 +278,7 @@
         <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.submitted){showSuccessModal();}"></iframe>
 
         <!-- Google Form Action with correct entry IDs -->
-        <form id="rsvp-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeLWRY2tcLxCqao80-xMTDmZz10cOHB72-BOUOqvQMiK0Uxyw/formResponse" method="POST" target="hidden_iframe" onsubmit="window.submitted=true;" class="soft-card p-8 md:p-12 space-y-6">
+        <form id="rsvp-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeLWRY2tcLxCqao80-xMTDmZz10cOHB72-BOUOqvQMiK0Uxyw/formResponse?" method="POST" target="hidden_iframe" onsubmit="window.submitted=true;" class="soft-card p-8 md:p-12 space-y-6">
             
             <!-- Field 1: Name -->
             <div>
@@ -288,10 +288,10 @@
                 <input type="text" id="entry.1400921500" name="entry.1400921500" required value="" placeholder="請輸入您的姓名" class="w-full px-4 py-3 rounded-lg border border-morandi-pink/40 bg-morandi-light focus:outline-none focus:ring-2 focus:ring-morandi-rose text-sm">
             </div>
 
-            <!-- Field 2: Email -->
+            <!-- Field 2: ADDRESS -->
             <div>
                 <label for="entry.656229362" class="block text-xs md:text-sm font-semibold tracking-wider text-morandi-dark mb-2">
-                    電子郵件 <span class="font-garamond text-morandi-rose font-normal text-base ml-1">EMAIL</span> <span class="text-red-500">*</span>
+                    喜帖收件地址<span class="font-garamond text-morandi-rose font-normal text-base ml-1">ADDRESS</span> <span class="text-red-500">*</span>
                 </label>
                 <input type="email" id="entry.656229362" name="entry.656229362" required value="" placeholder="example@mail.com" class="w-full px-4 py-3 rounded-lg border border-morandi-pink/40 bg-morandi-light focus:outline-none focus:ring-2 focus:ring-morandi-rose text-sm">
             </div>
