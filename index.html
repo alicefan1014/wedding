@@ -273,147 +273,14 @@
             <div class="w-12 h-[2px] bg-morandi-pink mx-auto mb-4"></div>
             <p class="text-sm text-morandi-dark/70">請於 <span class="font-semibold text-morandi-dark no-wrap">2026年11月30日</span> 前填寫此表單以利統計人數，謝謝您！</p>
         </div>
-
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeLWRY2tcLxCqao80-xMTDmZz10cOHB72-BOUOqvQMiK0Uxyw/viewform?embedded=true" width="100%" height="2580" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
         <!-- Hidden Iframe for silent Google Form submission -->
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.submitted){showSuccessModal();}"></iframe>
-
+        
         <!-- Google Form Action with correct entry IDs -->
-        <form id="rsvp-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeLWRY2tcLxCqao80-xMTDmZz10cOHB72-BOUOqvQMiK0Uxyw/formResponse" method="POST" target="hidden_iframe" onsubmit="window.submitted=true;" class="soft-card p-8 md:p-12 space-y-6">
-            
-            <!-- Field 1: Name -->
-            <div>
-                <label for="entry.1400921500" class="block text-xs md:text-sm font-semibold tracking-wider text-morandi-dark mb-2">
-                    姓名 <span class="font-garamond text-morandi-rose font-normal text-base ml-1">NAME</span> <span class="text-red-500">*</span>
-                </label>
-                <input type="text" id="entry.1400921500" name="entry.1400921500" required value="" placeholder="請輸入您的姓名" class="w-full px-4 py-3 rounded-lg border border-morandi-pink/40 bg-morandi-light focus:outline-none focus:ring-2 focus:ring-morandi-rose text-sm">
-            </div>
-
-            <!-- Field 2: Email -->
-            <div>
-                <label for="entry.656229362" class="block text-xs md:text-sm font-semibold tracking-wider text-morandi-dark mb-2">
-                    電子郵件 <span class="font-garamond text-morandi-rose font-normal text-base ml-1">EMAIL</span> <span class="text-red-500">*</span>
-                </label>
-                <input type="email" id="entry.656229362" name="entry.656229362" required value="" placeholder="example@mail.com" class="w-full px-4 py-3 rounded-lg border border-morandi-pink/40 bg-morandi-light focus:outline-none focus:ring-2 focus:ring-morandi-rose text-sm">
-            </div>
-
-            <!-- Field 3: Relationship -->
-            <div>
-                <label for="entry.1420355116" class="block text-xs md:text-sm font-semibold tracking-wider text-morandi-dark mb-2">
-                    與新人的關係 <span class="font-garamond text-morandi-rose font-normal text-base ml-1">RELATIONSHIP</span> <span class="text-red-500">*</span>
-                </label>
-                <select id="entry.1420355116" name="entry.1420355116" required class="w-full px-4 py-3 rounded-lg border border-morandi-pink/40 bg-morandi-light focus:outline-none focus:ring-2 focus:ring-morandi-rose text-sm">
-                    <option value="" disabled selected>請選擇關係</option>
-                    <option value="男方親屬">男方親屬</option>
-                    <option value="男方好友">男方好友</option>
-                    <option value="女方親屬">女方親屬</option>
-                    <option value="女方好友">女方好友</option>
-                </select>
-            </div>
-
-            <!-- Field 4: Banquet Attendance Count -->
-            <div>
-                <label for="entry.990235373" class="block text-xs md:text-sm font-semibold tracking-wider text-morandi-dark mb-2">
-                    參加午宴人數 <span class="font-garamond text-morandi-rose font-normal text-base ml-1">BANQUET ATTENDANCE</span> <span class="text-red-500">*</span>
-                </label>
-                <select id="entry.990235373" name="entry.990235373" required onchange="handleAttendanceChange()" class="w-full px-4 py-3 rounded-lg border border-morandi-pink/40 bg-morandi-light focus:outline-none focus:ring-2 focus:ring-morandi-rose text-sm">
-                    <option value="" disabled selected>請選擇人數</option>
-                    <option value="0人">0人 (不克出席)</option>
-                    <option value="1人">1人</option>
-                    <option value="2人">2人</option>
-                    <option value="3人">3人</option>
-                    <option value="4人">4人</option>
-                    <option value="5人">5人</option>
-                    <option value="6人">6人</option>
-                    <option value="7人">7人</option>
-                    <option value="8人">8人</option>
-                    <option value="9人">9人</option>
-                    <option value="9人以上">9人以上</option>
-                </select>
-            </div>
-
-            <!-- Conditional Section: Dietary Needs, Child Chairs & Blessings (Shown only if banquet attendance > 0) -->
-            <div id="conditional-fields" class="space-y-6 pt-4 border-t border-morandi-pink/20 hidden transition-all duration-300">
-                <!-- Field 5: Dietary Needs (Meat & Vegetarian counts 0-5) -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <label for="entry.381934492" class="block text-xs md:text-sm font-semibold tracking-wider text-morandi-dark mb-2">
-                            葷食人數 <span class="font-garamond text-morandi-rose font-normal text-base ml-1">MEAT COUNT</span>
-                        </label>
-                        <select id="entry.381934492" name="entry.381934492" class="w-full px-4 py-3 rounded-lg border border-morandi-pink/40 bg-morandi-light focus:outline-none focus:ring-2 focus:ring-morandi-rose text-sm">
-                            <option value="0人" selected>0人</option>
-                            <option value="1人">1人</option>
-                            <option value="2人">2人</option>
-                            <option value="3人">3人</option>
-                            <option value="4人">4人</option>
-                            <option value="5人">5人</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="entry.veg_count" class="block text-xs md:text-sm font-semibold tracking-wider text-morandi-dark mb-2">
-                            素食人數 <span class="font-garamond text-morandi-rose font-normal text-base ml-1">VEGETARIAN COUNT</span>
-                        </label>
-                        <select id="entry.veg_count" name="entry.veg_count" class="w-full px-4 py-3 rounded-lg border border-morandi-pink/40 bg-morandi-light focus:outline-none focus:ring-2 focus:ring-morandi-rose text-sm">
-                            <option value="0人" selected>0人</option>
-                            <option value="1人">1人</option>
-                            <option value="2人">2人</option>
-                            <option value="3人">3人</option>
-                            <option value="4人">4人</option>
-                            <option value="5人">5人</option>
-                        </select>
-                    </div>
-                </div>
-
-                <!-- Field 6: Child Chair Requirement -->
-                <div>
-                    <label for="entry.1669737100" class="block text-xs md:text-sm font-semibold tracking-wider text-morandi-dark mb-2">
-                        是否需要兒童椅 <span class="font-garamond text-morandi-rose font-normal text-base ml-1">CHILD CHAIR NEEDED</span>
-                    </label>
-                    <select id="entry.1669737100" name="entry.1669737100" class="w-full px-4 py-3 rounded-lg border border-morandi-pink/40 bg-morandi-light focus:outline-none focus:ring-2 focus:ring-morandi-rose text-sm">
-                        <option value="不需要" selected>不需要</option>
-                        <option value="1張">1張</option>
-                        <option value="2張">2張</option>
-                        <option value="3張">3張</option>
-                        <option value="3張以上">3張以上</option>
-                    </select>
-                </div>
-
-                <!-- Field 7: Blessing for Couple -->
-                <div>
-                    <label for="entry.1530377129" class="block text-xs md:text-sm font-semibold tracking-wider text-morandi-dark mb-2">
-                        給新人的祝福 <span class="font-garamond text-morandi-rose font-normal text-base ml-1">BLESSING</span>
-                    </label>
-                    <textarea id="entry.1530377129" name="entry.1530377129" rows="3" placeholder="請在此留下您給新人的溫馨祝福..." class="w-full px-4 py-3 rounded-lg border border-morandi-pink/40 bg-morandi-light focus:outline-none focus:ring-2 focus:ring-morandi-rose text-sm"></textarea>
-                </div>
-            </div>
-
-            <!-- Hidden / Extra Pre-filled Fields from Original URL to keep structural integrity -->
-            <input type="hidden" name="entry.1613964820" value="1人">
-            <input type="hidden" name="entry.282322204" value="2人">
-
-            <!-- Submit Button -->
-            <div class="pt-4 text-center">
-                <button type="submit" class="w-full md:w-auto px-10 py-4 bg-morandi-rose text-white font-medium rounded-xl hover:bg-morandi-dark transition-all duration-300 tracking-widest text-sm uppercase shadow-md no-wrap">
-                    送出回函 SUBMIT RSVP
-                </button>
-            </div>
-        </form>
+      
     </section>
 
-    <!-- Success Modal -->
-    <div id="success-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm hidden">
-        <div class="bg-white soft-card p-8 md:p-10 max-w-md mx-4 text-center space-y-4">
-            <div class="w-16 h-16 bg-morandi-pink/25 text-morandi-rose rounded-full flex items-center justify-center mx-auto mb-2">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-            </div>
-            <h3 class="font-garamond text-2xl font-semibold text-morandi-dark">回函已成功送出！</h3>
-            <p class="text-sm text-morandi-dark/70 leading-relaxed">
-                感謝您的回覆！我們已收到您的出席資訊，期待在婚禮當天與您相見。
-            </p>
-            <button onclick="closeSuccessModal()" class="mt-4 px-8 py-2.5 bg-morandi-rose text-white text-sm rounded-lg hover:bg-morandi-dark transition-colors">
-                確定 OK
-            </button>
-        </div>
-    </div>
+  
 
     <!-- Footer Section -->
     <footer class="py-12 bg-morandi-blush text-center border-t border-morandi-pink/20">
@@ -471,39 +338,7 @@
         setInterval(updateCountdown, 1000);
         updateCountdown();
 
-        // Transportation Accordion Toggle
-        function toggleAccordion(id) {
-            const content = document.getElementById('content-' + id);
-            const icon = document.getElementById('icon-' + id);
-            
-            content.classList.toggle('hidden');
-            icon.classList.toggle('rotate-180');
-        }
-
-        // Smart Form Logic: Show/Hide dietary and child chair based on banquet attendance
-        function handleAttendanceChange() {
-            const attendanceSelect = document.getElementById('entry.990235373');
-            const conditionalFields = document.getElementById('conditional-fields');
-            const selectedValue = attendanceSelect.value;
-
-            // If attendance is "0人", hide conditional fields; otherwise show them
-            if (selectedValue === '0人') {
-                conditionalFields.classList.add('hidden');
-            } else if (selectedValue !== '') {
-                conditionalFields.classList.remove('hidden');
-            }
-        }
-
-        // Success Modal Handlers
-        function showSuccessModal() {
-            document.getElementById('success-modal').classList.remove('hidden');
-            document.getElementById('rsvp-form').reset();
-            document.getElementById('conditional-fields').classList.add('hidden');
-            window.submitted = false;
-        }
-
-        function closeSuccessModal() {
-            document.getElementById('success-modal').classList.add('hidden');
+        
         }
     </script>
 </body>
