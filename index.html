@@ -159,6 +159,7 @@
                 </div>
             </div>
 
+            <!--
             <div class="border border-morandi-pink/30 rounded-xl overflow-hidden bg-white">
                 <button onclick="toggleAccordion('qa-4')" class="w-full px-5 py-4 text-left flex justify-between items-center font-medium text-sm md:text-base text-morandi-dark hover:bg-morandi-blush/50 transition-colors">
                     <span class="no-wrap">Q4. 誰是黏在沙發拔不起來的馬鈴薯？</span><span class="no-wrap font-semibold text-morandi-dark">誰是總想把沙發上的人拉出門的過動兒？</span>
@@ -166,6 +167,24 @@
                 </button>
                 <div id="content-qa-4" class="hidden px-5 pb-4 text-xs md:text-sm text-morandi-dark/70 leading-relaxed border-t border-morandi-pink/20 pt-3">
                     沙發馬鈴薯：新郎  <span class="no-wrap font-semibold text-morandi-dark"> 戶外過動兒：新娘 </span>
+                </div>
+            </div>
+            -->
+
+            <div class="border border-morandi-pink/30 rounded-xl overflow-hidden bg-white">
+                <button onclick="toggleAccordion('qa-4')" class="w-full px-5 py-4 text-left flex justify-between items-center font-medium text-sm md:text-base text-morandi-dark hover:bg-morandi-blush/50 transition-colors">
+                    <!-- 文字外層容器：加上 flex-1 與 pr-3 避免文字貼到箭頭 -->
+                    <div class="flex-1 pr-3">
+                        <span class="block">Q4. 誰是黏在沙發拔不起來的馬鈴薯？</span>
+                        <span class="block font-semibold text-morandi-dark mt-1">誰是總想把沙發上的人拉出門的過動兒？</span>
+                    </div>
+                    <!-- 箭頭加上 shrink-0 確保在任何螢幕寬度下都不會被壓扁 -->
+                    <svg id="icon-qa-4" class="w-4 h-4 shrink-0 transform transition-transform duration-300 text-morandi-rose" fill="none" stroke="currentColor" viewBox="0 0 18 18">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="content-qa-4" class="hidden px-5 pb-4 text-xs md:text-sm text-morandi-dark/70 leading-relaxed border-t border-morandi-pink/20 pt-3">
+                    沙發馬鈴薯：新郎 <span class="no-wrap font-semibold text-morandi-dark"> 戶外過動兒：新娘 </span>
                 </div>
             </div>
 
